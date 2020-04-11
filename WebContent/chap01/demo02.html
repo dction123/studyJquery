@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+/* 	function getContent(){
+		//var content = document.getElementById("content").value;
+		var content = $("#content").val();//使用jQuery
+		alert(content);
+	} */
+	
+	$(document).ready(function() {
+		$("#actionButton").click(function () {
+			alert($("#content").val());
+		});
+	});
+	
+	
+</script>
+<input type="text"  id="content"><input type="button" id="actionButton" value="获取页面内容"  />
+</body>
+</html>
